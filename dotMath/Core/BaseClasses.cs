@@ -41,7 +41,7 @@ namespace dotMath.Core
 
 		public CNumber(string value)
 		{
-			_value = Convert.ToDouble(value);
+			_value = Convert.ToDouble(value, new System.Globalization.CultureInfo("en-us"));
 		}
 
 		public override double GetValue()
